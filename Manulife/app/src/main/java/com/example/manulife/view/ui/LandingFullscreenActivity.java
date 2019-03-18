@@ -1,19 +1,16 @@
 package com.example.manulife.view.ui;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
 import com.example.manulife.R;
-import com.example.manulife.Util.Utils;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -101,7 +98,7 @@ public class LandingFullscreenActivity extends AppCompatActivity {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         String saved = sharedPref.getString(getString(R.string.saved_active_state), null);
 
-        if(savedInstanceState != null || saved != null){
+        if (savedInstanceState != null || saved != null) {
             openMainActivity();
         }
         setContentView(R.layout.activity_fullscreen);
@@ -113,7 +110,7 @@ public class LandingFullscreenActivity extends AppCompatActivity {
         //open mainActivity when button is clicked
         TextView mButtonView = findViewById(R.id.dummy_button);
         mButtonView.setOnClickListener(v -> {
-             openMainActivity();
+            openMainActivity();
         });
 
         // Set up the user interaction to manually show or hide the system UI.

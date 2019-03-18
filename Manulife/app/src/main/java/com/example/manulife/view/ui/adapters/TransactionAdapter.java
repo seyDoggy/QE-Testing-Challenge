@@ -1,6 +1,5 @@
 package com.example.manulife.view.ui.adapters;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,8 +13,6 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.ViewHolder> {
     private List<Activity> activities = new ArrayList<>();
@@ -37,7 +34,7 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
         Activity activity = activities.get(position);
         holder.tv_desc.setText(activity.getDescription());
         float value = (activity.getDeposit() == 0) ?
-                 - activity.getWithDrawl() : activity.getDeposit();
+                -activity.getWithDrawl() : activity.getDeposit();
         holder.tv_trans_value.setText(String.valueOf(value));
     }
 

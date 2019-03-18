@@ -3,7 +3,6 @@ package com.example.manulife.view.ui;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.view.MenuItem;
 
 import com.example.manulife.R;
 import com.example.manulife.Util.Utils;
@@ -53,17 +52,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        if(flagSave){
+        if (flagSave) {
             onSaveInstanceState(Utils.session());
             save();
         }
     }
 
-    private void delete(){
+    private void delete() {
         sharedPref.edit().remove(getString(R.string.saved_active_state)).commit();
     }
 
-    private void save(){
+    private void save() {
         editor.putString(getString(R.string.saved_active_state), Utils.ACTIVE_STATE);
         editor.commit();
     }

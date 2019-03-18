@@ -8,7 +8,6 @@ import com.example.manulife.R;
 import com.example.manulife.Util.Utils;
 import com.example.manulife.model.Account;
 import com.example.manulife.view.ui.transactions.TransactionsFragment;
-import com.squareup.moshi.internal.Util;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
