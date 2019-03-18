@@ -102,7 +102,6 @@ public class LandingFullscreenActivity extends AppCompatActivity {
         String saved = sharedPref.getString(getString(R.string.saved_active_state), null);
 
         if(savedInstanceState != null || saved != null){
-            Log.i(LandingFullscreenActivity.class.getSimpleName(), "in"+saved );
             openMainActivity();
         }
         setContentView(R.layout.activity_fullscreen);
