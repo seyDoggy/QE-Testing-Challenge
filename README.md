@@ -4,7 +4,7 @@
 
 ### Intructions 
 
-1. The objective is to add sufficient test coverage for the native mobile application that was built to the below acceptance criteria.
+1. The objective is to add sufficient test coverage for the native mobile Android application that was built to the below acceptance criteria.
 1. The data required for each view is contained in the `/data` folder.
 1. Please inlude any additional acceptance criteria, test cases or scenrarios that the acceptance criteria does not inherently cover.
 1. Provide any instructions required to run your tests.
