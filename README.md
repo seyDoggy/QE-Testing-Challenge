@@ -1,17 +1,16 @@
 
-## Application Challenge
-##### Coding challenge for prospective candidates
+## QE Testing Challenge
+##### A practical excercise for prospective Quality Engineering candidates
 
 ### Intructions 
 
-1. The objective is to create a runnable native mobile application to the below acceptance criteria.
+1. The objective is to add sufficient test coverage for the native mobile application that was built to the below acceptance criteria.
 1. The data required for each view is contained in the `/data` folder.
-1. You are free to use any frameworks or plugins to assist you in the task. If you do so, please provide a brief reason why.
-1. You are given creative freedom to design the UI as you deem fit to display the given data.
-1. Provide any instructions required to build and run your application.
+1. Please inlude any additional acceptance criteria, test cases or scenrarios that the acceptance criteria does not inherently cover.
+1. Provide any instructions required to run your tests.
 1. Instructions to share your code back with us will have been provided via email.
 
-### Acceptance Criteria
+### Original Acceptance Criteria
 
 **SCENARIO: The user launches your application for the first time.**   
 GIVEN the user is on the home screen of their mobile device   
